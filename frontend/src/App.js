@@ -1,10 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
+import { Mynavbar, Footer, Form, Hero  } from "./components/MUI_TEST";
 
 import { ChannelDetails, VideoDetails, SearchFeed, Navbar, Feed } from './components';
 
 const App = () => (
-  <BrowserRouter>
+  /*<BrowserRouter>
     <Box sx={{ backgroundColor: '#000' }}>
       <Navbar />
       <Routes>
@@ -15,6 +16,16 @@ const App = () => (
       </Routes>
     </Box>
   </BrowserRouter>
+  */
+
+
+  //creating the new components to explore the features of material ui
+<Box >
+  <Mynavbar/>
+  <Hero/>
+  <Footer/>
+</Box>
+
 );
 
 export default App;

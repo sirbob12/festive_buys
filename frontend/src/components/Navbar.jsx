@@ -1,13 +1,11 @@
 import React from 'react';
-import { Stack, Container, Typography } from '@mui/material';
+import { Stack, Container, Typography, Box } from '@mui/material';
 import { Link } from "react-router-dom";
 import {logo} from '../utils/constants';
 import {SearchBar} from './'
 
 
-const navitems = [
-  'Home', 'Stream', 'Live'
-]
+
 
 
 const Navbar = () => {
@@ -17,6 +15,13 @@ const Navbar = () => {
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
     </Link>
+
+    <Box sx={{display:'flex', gap:5, color:"#fff", listStyle:'none',pt:3}}>
+      <li className="ordered">About</li>
+      <li className="ordered">Contact</li>
+      <li className="ordered">Services</li>
+      
+      </Box>
    
     <SearchBar />
     </Container>

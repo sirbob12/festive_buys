@@ -15,6 +15,7 @@ import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
+export const header_logo = 'https://toppng.com/uploads/preview/netflix-logo-png-download-11660600814vkfgjh8swu.png';
 
 
 
