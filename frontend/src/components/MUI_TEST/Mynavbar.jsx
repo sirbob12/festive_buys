@@ -1,20 +1,16 @@
-import {React, useState} from 'react'
-import {Stack, Box, Typography, Container, Button, IconButton, MenuList, MenuItem, Paper} from '@mui/material';
+import {React, useState} from 'react';
+import {Stack, Box, Typography, Container, Button, Menu , IconButton, MenuList, MenuItem, Paper} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import netflix from '../../asset/netflix.png';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 
 
 const Mynavbar = () => {
 
-  const [toggle, setToggle] = useState(false);
-
-
-
-  const clickers = () =>{
-    alert('we just they try new things')
-  }
+ 
+  const [open, setOpen] = useState(false)
 
   const navbarList = [
     'Romance', 'Commedy', 'Sci-Fi', 'Actions'
@@ -42,7 +38,7 @@ const Mynavbar = () => {
           <Button 
            variant= 'contained'
           
-            onClick={()=> clickers()}
+            //onClick={()=>{setToggle(true)}}
             sx={{display:{xs:'none', md:'inline'}, mt:'25px', mr:'25px', background:'green', fontWeight:'100', "&:hover":{background:'black'}}}
             
             >
@@ -52,22 +48,37 @@ const Mynavbar = () => {
           </Button>
         </Box>
 
-        <IconButton  onClick={e=> setToggle(true)} sx={{ display: {xs:'inline', md:'none'}, color:'white'}}>
-          <MenuIcon fontSize= 'large' onClick={e=>setToggle(true)}/>
+        <IconButton onClick={e=>setOpen(true)} sx={{ display: {xs:'inline', md:'none'}, color:'white'}} >
+          <MenuIcon fontSize= 'large'/>
         </IconButton>
 
-      <Paper 
-         elevation={2}
-         variant='outlined' square
-         sx={{bgcolor:'#fff',borderRadius:'10px', position:'absolute', top:'70px', right:'10px'}}
-      >
-        <MenuList  toggle={true} onClose ={e=>setToggle(false)}  sx={{display:{xs:'none'}}}>
-         {navbarList.map((list)=>(
-          <MenuItem>{list}</MenuItem>
-         ))}
-        </MenuList>
-      </Paper>
+          
+        <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
         
+        
+        open={open}
+        onClose={e=>setOpen(false)}
+       
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+          
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+          background:'blue'
+        }}
+      >
+        <MenuItem >Profile</MenuItem>
+        <MenuItem >My account</MenuItem>
+        <MenuItem >Logout</MenuItem>
+      </Menu>
+
+     
+              
       </Container>        
       
       
