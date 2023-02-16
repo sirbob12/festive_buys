@@ -45,4 +45,4 @@ export const demoVideoUrl = '/video/GDa8kZLNhJ4';
 export const demoChannelTitle = 'JavaScript Mastery';
 export const demoVideoTitle = 'Build and Deploy 5 JavaScript & React API Projects in 10 Hours - Full Course | RapidAPI';
 export const demoProfilePicture = 'http://dergipark.org.tr/assets/app/images/buddy_sample.png'
-
+export const backgroundBg ='https://img.freepik.com/free-vector/blue-3d-particles-background-design_1017-15410.jpg?size=626&ext=jpg' 

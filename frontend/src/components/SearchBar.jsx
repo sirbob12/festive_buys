@@ -7,10 +7,12 @@ import {Paper, IconButton, Box} from '@mui/material';
 
 const SearchBar = () => {
   return (
+
     <Paper  
       component = "form"
       onsubmt = {()=>{}}
       sx={{ 
+
         borderRadius:20,
         height: 25,
         border: '1px solid #e3e3e3',
@@ -23,7 +25,7 @@ const SearchBar = () => {
      }}
     >
         <Box sx ={{
-           mt:-0.8
+            mt:-0.8
         }}>
 
         <input

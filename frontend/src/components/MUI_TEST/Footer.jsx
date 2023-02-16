@@ -4,11 +4,6 @@ import {Box,Stack, Typography, Menu, MenuItem, Paper,Styled, Button, createTheme
 
 const Footer =()=>{
 
-const [active, setActive] = useState(false);
-
-const handleClick = () =>{
-  setActive(!active)
-}
 
 
 
@@ -20,8 +15,7 @@ const handleClick = () =>{
   return(
     <Box py='20px'>
       <Paper sx={{ borderRadius:'25px', width:'500px',height:'400px', justifyContent:'center', textAlign:'center',ml:'450px' }}
-        onClick ={handleClick}
-        style={{background: active? 'blue': 'red'}}
+       
       >
         <Box>
           <Typography variant ='body2'> Hello,</Typography>

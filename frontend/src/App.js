@@ -5,6 +5,7 @@ import { Mynavbar, Footer, Form, Hero  } from "./components/MUI_TEST";
 import { ChannelDetails, VideoDetails, SearchFeed, Navbar, Feed } from './components';
 
 const App = () => (
+
   /*<BrowserRouter>
     <Box sx={{ backgroundColor: '#000' }}>
       <Navbar />
@@ -20,10 +21,12 @@ const App = () => (
 
 
   //creating the new components to explore the features of material ui
+  
 <Box >
+ 
   <Mynavbar/>
-  <Hero/>
-  <Footer/>
+  <Form/>
+ 
 </Box>
 
 );

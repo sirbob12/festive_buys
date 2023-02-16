@@ -28,7 +28,7 @@ const Mynavbar = () => {
          
 
            {navbarList.map(list=>(
-                 <Typography variant='body1' key={list.id} sx={{color:'#fff', }}>
+                 <Typography variant='body1' component="a" key={list} sx={{color:'#fff', }}>
                     {list}
                  </Typography>
            ))}
