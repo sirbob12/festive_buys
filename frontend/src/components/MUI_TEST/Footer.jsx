@@ -2,15 +2,8 @@ import react, {useState, useEffect} from 'react';
 
 import {Box,Stack, Typography, Menu, MenuItem, Paper,Styled, Button, createTheme} from '@mui/material';
 
+
 const Footer =()=>{
-
-
-
-
-
-  
-
-  
 
   return(
     <Box py='20px'>
