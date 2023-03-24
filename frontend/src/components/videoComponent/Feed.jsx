@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 import {Stack, Typography, Box } from '@mui/material'
-import {Sidebar} from '../components'
+import {Sidebar} from '.'
 
 const Feed = () => {
   return (

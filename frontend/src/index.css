@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;800;900&display=swap');
+
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'jost';
+
 }
 
 a {
@@ -10,79 +16,45 @@ a {
   color: black;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  height: 5px;
+li{
+  list-style: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: rgb(114, 113, 113);
-  border-radius: 10px;
-  height: 200px;
+
+.testimony_image{
+   height:100px;
+   width: 100px;
+   border-radius: 50%;
+   margin-left: 100px;
+  
 }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
+.logo2_image{
+  height: 53px;
+
 }
 
-.category-btn:hover {
-  background-color: #FC1503 !important;
-  color: white !important;
-}
-
-.category-btn:hover span{
-  color: white !important;
-}
-
-.react-player {
-  height: 77vh !important;
-  width: 100% !important;
-}
-
-.search-bar{
-  border:none;
-  outline:none;
-  width:330px;
-}
-
-.category-btn{
-  font-weight: bold !important;
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  cursor:pointer;
-  background: transparent;
-  outline: none;
+.form_class{
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 60%;
+  height:30px;
+  width:auto;
   border: none;
-
-  padding: 7px 15px;
-  margin: 10px 0px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  padding-top: 10px;
+  
 }
 
-@media screen and (max-width: 900px) {
-  .category-btn{
-    margin: 10px;
-  }
+.form_class:focus{
+  outline: none;
 }
 
-@media screen and (max-width:800px){
-  .copyright{
-    display:none !important;
-  }
+.social{
+  height: 50px;
+  justify-content: right;
+  padding: 5px 5px;
+
 }
 
-@media screen and (max-width: 600px) {
-  .scroll-horizontal {
-    overflow: auto !important;
-  }
 
-  .react-player {
-    height: 45vh !important;
-  }
-  .search-bar{
-    width:200px;
-  }
-}
+

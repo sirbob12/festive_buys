@@ -1,16 +1,29 @@
 import {createTheme} from '@mui/material/styles';
+import { red } from '@mui/material/colors';
 
 
 export const theme = createTheme({
    palette:{
     primary:{
-        main:'#1566e8',
+        main:'#382C67',
         light:'#04214f'
     },
 
     secondary:{
-        main:'#a5c92e',
-        light:'#cf3ea8'
+        main:'#F05AB4'
     }
+   },
+
+   typography:{
+      fontFamily:'jost',
+
+      fontweightLight:400,
+      fontWeightRegular:500,
+      fontWeightMedium:700,
+      fontWeightBold:900
+
+    
+      
+   
    }
 })

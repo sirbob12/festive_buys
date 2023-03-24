@@ -1,6 +1,6 @@
 import React from 'react'
 import {Stack, Box, Typography} from '@mui/material'
-import {categories} from '../../src/utils/constants'
+import {categories} from '../../utils/constants'
 
 const Sidebar = () => {
 
