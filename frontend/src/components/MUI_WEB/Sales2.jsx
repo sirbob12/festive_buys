@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Sales2 = () => {
   return (
     <Box sx={{mt:'200px', background:'#382C67', height:'auto', pb:'60px'}}>
@@ -17,7 +18,7 @@ const Sales2 = () => {
 
           {productData.map((products)=>(
 
-            <Link to='/product_page'>
+            <Link to='/productpage/:1'>
             <Paper key={products.id}  SX={{borderRadius:0, height:'250px', width:'auto', pl:'10px'}}>
                <img src={products.img} alt="products_image" style={{height:'210px', width:'300px', objectFit:'contain'}}/>
                <Typography sx={{pl:'10px'}}>{products.name}</Typography>

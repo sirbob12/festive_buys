@@ -22,7 +22,7 @@ const Navbar = () => {
         </Link>
 
         <Box sx={{display:{xs:'none', md:'flex'}, gap:'40px', mt:'37px', ml:'-40px'}}>            
-           <Typography component='a' sx={{fontSize:'18px', fontWeight:600}}>Latest Gifts</Typography>
+          <Typography component='a' sx={{fontSize:'18px', fontWeight:600}}>Latest Gifts</Typography>
            <Typography component='a'   sx={{fontSize:'18px', fontWeight:600}}>Thanksgiving</Typography>
            <Typography component='a'   sx={{fontSize:'18px', fontWeight:600}}>Valentine</Typography>
         </Box>

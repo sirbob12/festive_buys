@@ -1,5 +1,6 @@
 import React from 'react'
 import {Box, Stack, Typography, Card} from '@mui/material';
+import { Link } from 'react-router-dom';
 import  Subscribe from './Subscribe';
 import logo2 from '../../festive_assets/logo2.png';
 import  social1 from '../../festive_assets/social1.png';
@@ -15,8 +16,9 @@ const Footer = () => {
       <Box  sx={{display:'flex', gap:'150px'}}>
       
       <Box className='left_section'>
+        <Link to='/'>
          <img src={logo2} alt="" className="logo2_image" />
-
+         </Link>
          <Box sx={{mt:'10px'}}>
          
          <Typography sx={{fontSize:'25px', fontWeight:'600', color:'#fff'}}>
@@ -51,9 +53,9 @@ const Footer = () => {
          </Box>
 
          <Box className='social_icons'  sx={{display:'flex',ml:'400px',mt:'50px', height:'30px', gap:'20px'}}>
-            <img src={social1} alt="" className="social1"  style={{height:'30px', px:'10px'}}/>
-            <img src={social2} alt="" className="social1" style={{height:'30px', px:'10px'}}/>
-            <img src={social3} alt="" className="social1" style={{height:'30px', px:'10px'}} />
+            <a href="https://www.delightchat.io/" target='blank'><img src={social1} alt="" className="social1"  style={{height:'30px', px:'10px'}}/></a>
+            <a href="https://dribbble.com/tags/product_page" target='blank'><img src={social2} alt="" className="social1" style={{height:'30px', px:'10px'}}/></a>
+            <a href="https://dribbble.com/tags/product_page" target='blank'><img src={social3} alt="" className="social1" style={{height:'30px', px:'10px'}} /></a>
          </Box>
          
         </Box>
