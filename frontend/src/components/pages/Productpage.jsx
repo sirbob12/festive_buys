@@ -1,7 +1,9 @@
 import React from 'react'
-import { Box, Typography, Button, Card, Container} from '@mui/material'
-import { productImage } from '../../utils/constants'
-import { fontSize } from '@mui/system'
+import { Box, Typography, Button, Card, Container } from '@mui/material'
+import { productData, productImage } from '../../utils/constants'
+import { fontSize } from '@mui/system';
+import { Testimonials } from '../MUI_WEB';
+import { Consideration } from '../MUI_WEB';
 
 
 const Productpage = () => {
@@ -55,7 +57,8 @@ const Productpage = () => {
       </Box>
       </Container>
 
-
+      <Consideration/>
+      <Testimonials/>
     </Box>
   )
 }

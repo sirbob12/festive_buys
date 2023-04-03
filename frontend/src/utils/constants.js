@@ -177,3 +177,5 @@ export const productsTestimonial = [
 
 
 export const productImage = 'https://m.media-amazon.com/images/I/81Eq0-Zj0OL._AC_UL320_.jpg'
+
+export const productImage1 = ' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgB4OF59Om4FUPPhgrgWWq80rj6vmnKV-Cg&usqp=CAU'

@@ -8,7 +8,7 @@ const Testimonials = () => {
   return (
     <Box  sx={{pb:'90px', pt:'20px'}}>
       <Typography variant='h6' sx={{fontWeight:600, textAlign:'center', fontSize:'30px', py:'30px'}}>What our customers are saying.</Typography>
-    <Box  sx={{display:'flex', gap:'40px', alignItems:'center',ml:'200px',mt:'30px'}}>
+    <Box  sx={{display:{xs:'block',md:'flex'}, gap:'40px', alignItems:'center',ml:'200px',mt:'30px'}}>
       {productsTestimonial.map((testimony)=>(
         <Card sx={{height:'auto', width:'300px', pt:'50px'}}>
           <img src={testimony.img} alt="testimony_image" className='testimony_image' style={{}}/>
