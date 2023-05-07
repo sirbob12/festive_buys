@@ -76,3 +76,8 @@ li{
 .paypal{
   margin-top: 30px;
 }
+
+.category-btn{
+ display: none;
+}
+

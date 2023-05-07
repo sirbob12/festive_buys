@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Typography, Button, Card, Container } from '@mui/material';
 import google from '../../festive_assets/google.png';
 import paypal from '../../festive_assets/paypal.png';
-import { CartComponent, Consideration } from '../MUI_WEB';
+import { CartComponent, Consideration } from '../MUI_WEB'
 import { Link } from 'react-router-dom';
 
 const Payment = () => {
