@@ -10,7 +10,7 @@ export const categories =[
     { name:'History' , icon: <HistoryIcon/> },
     { name:'Settings' , icon: <SettingsOutlinedIcon/> },
     { name:'Analytics' , icon: < RestoreOutlinedIcon/> },
-    { name:'Product' , icon: <InventoryOutlinedIcon/> },
+    { name:'Orders' , icon: <InventoryOutlinedIcon/> },
     { name:'Transaction' , icon: <TimelineOutlinedIcon/> },
 
 ]
