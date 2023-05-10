@@ -6,15 +6,17 @@ import App from './App';
 import {theme} from './theme'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import { ProSidebarProvider } from 'react-pro-sidebar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <ThemeProvider theme={theme}>
   <React.StrictMode>
+    <ProSidebarProvider>
 
     <App />
-
+    </ProSidebarProvider>
   </React.StrictMode>
   </ThemeProvider>
 

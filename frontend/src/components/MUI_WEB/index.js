@@ -7,5 +7,5 @@ export {default as Footer} from './Footer'
 export {default as Hero} from './Hero';
 export {default as CartComponent} from './CartComponent';
 export {default as Consideration} from './Consideration';
-export {default as Sidebar} from './Sidebar';
+export {default as SideNav} from './SideNav';
 export {default as Feed} from './Feed';
