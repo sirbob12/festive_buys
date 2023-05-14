@@ -35,11 +35,14 @@ const Navbar = () => {
         </Box>
         </Link>
 
+
+        <Link to='/signup'>
         <Button variant='contained' size='small' color='secondary'
          sx={{py:'10px', mt:'29px',mb:'27px', textTransform:'capitalize'
          , height:'39px', width:'120px', display:{xs:'none', md:'flex'} }}>
           Sign Up
         </Button>
+        </Link>
 
         <Box sx={{display:{xs:'flex', md:'none'}, mt:'25px'}}>
         <img src={dashicons_menu} alt="" className="menuIcons" style={{height:'50px'}}/>

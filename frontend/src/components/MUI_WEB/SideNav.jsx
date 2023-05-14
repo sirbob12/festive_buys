@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Stack, Typography, Button } from '@mui/material';
+import { Link, useLocation } from 'react-router-dom';
 import { categories } from '../../utils/sideComponents';
 import { Sidebar, MenuItem, Menu, sidebarClasses } from 'react-pro-sidebar';
 import GridViewIcon from '@mui/icons-material/GridView';
@@ -8,6 +9,10 @@ import EventRepeatIcon from '@mui/icons-material/EventRepeat';
 
 
 const SideNav = () => {
+
+   //use location hook to track route pathways and highligh active routes
+   const location = useLocation()
+
    return(
       <Box>
          <Sidebar 
@@ -17,33 +22,40 @@ const SideNav = () => {
             color:'#fff',
             fontSize:'20px',
             paddingTop:'20px',
-            paddingBottom:'10px',
+            paddingBottom:'80px',
             paddingLeft:'10px',
             paddingRight:'10px'
+         
            
             
          },
   }} >
             <Menu  sx={{px:'5px'}}
                menuItemStyles={{
-                  button:({active})=>{
+                  button:({active, level})=>{
+                     
                     return{
-                      backgroundColor: active? '#f5d9ff': undefined,
+                      backgroundColor: active? '#F05AB4': undefined,
                       "&:hover":{
                         background:'#F05AB4',
                         fontWeight:'bold',
                         borderRadius:'4px',
-                        paddingLeft:'15px'
-                      }
+                        paddingLeft:'15px',
+                        
+                      },
+
+                      paddingTop:'15px',
+                      paddingBottom:'15px'
+
                     }
                   }
                 }}
             
             >
-               <MenuItem icon={<GridViewIcon/>}>Dashboard</MenuItem>
-               <MenuItem icon={<AccountBalanceWalletIcon/>}>Orders</MenuItem>
-               <MenuItem icon={<EventRepeatIcon/>}> Transactions</MenuItem>
-               <MenuItem icon={<EventRepeatIcon/>}>Analytics</MenuItem>
+               <MenuItem active={location.pathname === '/admin/dashboard'} component={<Link to='/admin/dashboard'/>}  icon={<GridViewIcon/>}>Dashboard</MenuItem>
+               <MenuItem  active={location.pathname === '/admin/order'} component={<Link to='/admin/order'/>} icon={<AccountBalanceWalletIcon/>}>Orders</MenuItem>
+               <MenuItem active={location.pathname === '/admin/transactions'} component={<Link to='/admin/transcations'/>}  icon={<EventRepeatIcon/>}> Transactions</MenuItem>
+               <MenuItem active={location.pathname === '/admin/analytics'} component={<Link to='/admin/analytics'/>}  icon={<EventRepeatIcon/>}>Analytics</MenuItem>
             </Menu>
          </Sidebar>
       </Box>
