@@ -16,7 +16,7 @@ const Signup = () => {
         <TextField type="email" label="Email"  placeholder='Enter Email' sx={{width:'420px', mt:'20px'}}/>
         </Grid>
 
-        
+         
 
         <Button
          sx={{display:'inline-block',

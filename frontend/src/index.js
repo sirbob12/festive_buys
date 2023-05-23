@@ -7,6 +7,8 @@ import {theme} from './theme'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ProSidebarProvider } from 'react-pro-sidebar';
+import { Provider } from 'react-redux';
+import store from '../src/store/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,8 +16,11 @@ root.render(
   <ThemeProvider theme={theme}>
   <React.StrictMode>
     <ProSidebarProvider>
+      <Provider store={store}>
 
     <App />
+
+    </Provider>
     </ProSidebarProvider>
   </React.StrictMode>
   </ThemeProvider>
