@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Box, Stack, Typography, Container, Button, AppBar, Badge} from '@mui/material';
 import {MailIcon} from '@mui/icons-material'
 import {theme} from '../../theme';
 import logo1 from '../../festive_assets/logo1.png';
 import dashicons_menu from  '../../festive_assets/dashicons_menu.png';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import cart from '../../festive_assets/cart.png';
+import shoppingCart from '../../festive_assets/shoppingCart.png'
 import { Link } from 'react-router-dom'
+import { getAllCarts, getCartItemsCount, getCartTotal } from '../../store/shoppingCart';
+import { useSelector, useDispatch } from 'react-redux';
+
 
 
 
 const Navbar = () => {
+
+  const cart = useSelector(getAllCarts);
+  const itemsCount = useSelector(getCartItemsCount)
+  const dispatch = useDispatch();
+
+  console.log(itemsCount)
+ 
+  useEffect(()=>{
+     dispatch(getCartTotal())
+  }, [cart])
+
+
+
   return (
    <Stack  direction='row' sx={{background:'#fff', height:'auto'}}>
       <Container  sx={{display:'flex', justifyContent:'space-between'}}>
@@ -29,12 +45,11 @@ const Navbar = () => {
 
          <Link to='/cart'>
          <Box  sx={{ml:'50px'}}>   
-        <Badge color="secondary" badgeContent={2} sx={{mb:'25x', mt:'30px', ml:{xs:'35px', md:'70px'}}}>
-          <img src={cart} alt="cart_png" className="cart_png"  style={{height:38}} />
+        <Badge color="secondary" badgeContent={itemsCount} sx={{mb:'25x', mt:'30px', ml:{xs:'35px', md:'70px'}}}>
+          <img src={shoppingCart} alt="cart_png" className="cart_png"  style={{height:38}} />
         </Badge>
         </Box>
-        </Link>
-
+        </Link>  
 
         <Link to='/signup'>
         <Button variant='contained' size='small' color='secondary'

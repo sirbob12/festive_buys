@@ -1,25 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, Typography, Button } from '@mui/material'
 import { useDispatch, useSelector } from 'react-redux';
+import { fetchProducts } from '../../../store/productsSlice'
 
 //import actions from form the countSlice
 
 
-
 const Dashboard = () => {
 
+  const products = useSelector();
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(fetchProducts())  
+  }, [dispatch])
+  
+  console.log(products)
 
   return (
     <Box sx={{}}>
-      <Typography>Welcome</Typography>
-      <Typography sx={{fontSize:'25px', fontWeight:'bold'}}>Mr Smith,</Typography>
- 
-        <Box sx={{display:'flex', gap:'15px'}}>
-          <Button >Increase</Button>
-          <Typography sx={{fontSize:'25px',fontWeight:'bold'}}>count</Typography>
-          <Button >Decrease</Button>
-        </Box>
+       <Typography sx={{fontSize:'35px', fontWeight:'bold',textAlign:'center'}}>Product Page</Typography>
 
 
     </Box>

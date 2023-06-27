@@ -12,7 +12,7 @@ const Navigation = () => {
         <Navbar/>
         <Routes>
            <Route path='/'  element={<Home/>}/>
-           <Route path='/productpage/:id'  element={<Productpage/>}/>
+           <Route path='/products/:id'  element={<Productpage/>}/>
            <Route path='/pricePage' element={<PricePage/>}/>
            <Route path='/cart' element={<ShoppingCart/>}/>
            <Route path='/payment' element={<Payment/>}/>

@@ -1,4 +1,4 @@
-import axios from 'axios';
+/*import axios from 'axios';
 
 export const BASE_URL = 'https://youtube-v31.p.rapidapi.com';
 
@@ -17,3 +17,16 @@ export const fetchFromAPI = async (url) => {
 
   return data;
 }
+
+*/
+
+
+export const STATUS = Object.freeze({
+    IDLE:'IDLE',
+    LOADING:'LOADING',
+    SUCCEED:'SUCCEED',
+    FAILED:'FAIILED'
+
+})
+
+export const base_url = 'http://localhost:5000/api/products';

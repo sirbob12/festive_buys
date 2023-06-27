@@ -18,7 +18,7 @@ const Sales2 = () => {
 
           {productData.map((products)=>(
 
-            <Link to='/productpage/:1'>
+            <Link  to={`products/${products.id}`}>
             <Paper key={products.id}  SX={{borderRadius:0, height:'250px', width:'auto', pl:'10px'}}>
                <img src={products.img} alt="products_image" style={{height:'210px', width:'300px', objectFit:'contain'}}/>
                <Typography sx={{pl:'10px'}}>{products.name}</Typography>

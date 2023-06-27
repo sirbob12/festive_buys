@@ -16,8 +16,8 @@ const getAllProducts = async(req, res)=>{
 //controller to get each specific product by ID from the databas
 const getProductById = async(req,res)=>{
     try {
-        const product = await product.findById(req.params.id);
-        res.json(product);
+        const singleproduct = await product.findById(req.params._id);
+        res.json(singleproduct);
 
     } catch (error) {
         console.error(error)
